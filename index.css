@@ -1,0 +1,177 @@
+body{
+    /* background-color: rgb(35, 220, 220); */
+    /* background-color: #87CEFA; */
+    background-color: white;
+    color:#333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: #000000;
+    font-family: "Sedgwick Ave Display", cursive;
+    letter-spacing: 3px;
+}
+canvas {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 1); */
+    /* background-color: #F0F8FF; */
+    background-color: #F7F7F7;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .5);
+}
+.color{
+    width: 32px; 
+    height: 32px; 
+    border-radius: 50%;
+    border: none; 
+    cursor: pointer;
+    appearance: none;
+    margin-top: 20px;
+    border:0px;
+    padding: 0;
+}
+
+p{
+    font-size: 23px;
+}
+
+.shape{
+    width:33px;
+    height:33px;
+}
+
+.color::-webkit-color-swatch-wrapper {
+    padding: 0; 
+    width: 32px; 
+    height: 32px; 
+}
+
+.color::-webkit-color-swatch {
+    /* padding:0px; */
+    border:0px;
+    background-color: black;
+    border-radius: 50%; 
+}
+
+#multi{
+    position:absolute;
+}
+
+.circular-label{
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    cursor: pointer; /* Change cursor to pointer */
+    text-align: center;
+    line-height: 30px; /* Center the image vertically */
+    background-color: #000000; /* Optional: add a background color */
+}
+
+.icon-image {
+    width: 65%;
+    height: 65%;
+    padding-top: 5px;
+    object-fit: cover; /* Ensure the image fits well */
+}
+
+.color-control{
+    display:flex;
+    width:600px;
+    justify-content: space-evenly;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    align-items: center;
+    flex-direction: row;
+    margin-top:10px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+label {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.clicked{
+    scale:0.9;
+}
+
+label:hover{
+    opacity: 0.8;
+}
+
+.number{
+    appearance: none;
+    width:150px;
+    height:20px;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 29px;
+    padding-left:5px;
+    padding-right: 5px;
+    background-color:#DDDDDD;
+}
+
+.number::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%; 
+    background: #000000;
+}
+
+.number::-webkit-slider-thumb:hover{
+    /* appearance: none; */
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 7px rgba(0, 0, 0, 0.579); 
+}
+
+#clearButton{
+    background-color: #000000;    
+}
+
+#clearButton:hover{
+    background-color: #242424;
+}
+
+#download{
+    background-color: #333333;
+}
+
+#download:hover{
+    background-color: #4d4d4d;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Maker</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Draw Your Signature</h1>
+    <div class="container">
+        <canvas id="signatureCanvas" width="600" height="400"></canvas>
+        <div class="color-control">
+            <p>Color</p>
+            <div >  
+                <input id="multi" class='color' type="color"></input>
+                <label for="multi" class="circular-label" id="circular-label">
+                    <img src="dropper.svg" alt="Color Picker" class="icon-image">
+                </label>
+                <input id="red" class='default-color color shape' type="button" style="background-color: red;">
+                <input id="blue" class='default-color color shape' type="button" style="background-color: blue;">
+                <input id="green" class='default-color color shape' type="button" style="background-color: green;">
+            </div>
+            <p style="margin-left:25px;margin-right: 0px;">Stylus Size</p>
+            <input id="fontSize" class='number' type="range" min="0" max="6">
+        </div>
+    </div>    
+    <div class="btns">
+        <button id="clearButton">Clear</button>
+        <button id="download"> Download </button>
+    </div>
+    <script src="./canvas.js"></script>
+</body>
+</html>
